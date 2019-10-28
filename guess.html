@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+    var secretNum = 98;
+    var ans = prompt("Guess the secret number!");
+    var guess = parseInt(ans);
+
+    if (guess === secretNum) {
+      document.write("You got it!");
+    } else if (guess === secretNum - 1 || guess === secretNum + 1) {
+      document.write(`Close, but the number is ${secretNum}.`);
+    } else {
+      document.write(`The number is ${secretNum}.`);
+    }
+  </script>
+</body>
+</html>
