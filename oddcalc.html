@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+    var num1 = prompt("Give me a number!");
+    var num2 = prompt("Give me another!");
+    var ask = prompt("What kind of operation would you want to do? (Mult/Div/Mod)");
+
+    switch(ask) {
+      case "mult":
+        document.write(num1 * num2);
+        break;
+      case "div":
+        document.write(num1 / num2);
+        break;
+      case "mod":
+        document.write(num1 % num2);
+        break;
+      default:
+        document.write("***invalid operation***")
+    }
+  </script>
+</body>
+</html>
